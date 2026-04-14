@@ -20,14 +20,17 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 
+// Your web app's Firebase configuration
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCg6pc9y8yqHajPY2xot3428WiVWP8SzTE",
-  authDomain: "expense-tracker-83cc9.firebaseapp.com",
-  projectId: "expense-tracker-83cc9",
-  storageBucket: "expense-tracker-83cc9.firebasestorage.app",
-  messagingSenderId: "440653680387",
-  appId: "1:440653680387:web:cb5a0b9a1f0efbc82c6336",
-  measurementId: "G-DB8W3NV7RJ"
+  apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECTID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_FIREBASE_APPID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENTID
 };
 
 // Initialize Firebase
